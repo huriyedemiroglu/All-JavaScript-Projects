@@ -1,0 +1,44 @@
+@mixin main($bgImage){
+    height: 77vh;
+    display: flex;
+    margin: 0.5vh 0;
+    text-align: center;
+    background: 
+        linear-gradient(
+            to right,
+            rgba(#000, 0.6),
+            rgba(#000, 0.6)
+        ),
+        url($bgImage);
+    background-position: center;
+    background-size: cover;
+    color: $text-color;
+}
+
+@mixin media-xs {
+  @media screen and (max-width: 360px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media screen and (max-width: 520px) {
+    @content;
+  }
+}
+@mixin media-md {
+  @media screen and (max-width: 680px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (max-width: 815px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (max-width: 1240px) {
+    @content;
+  }
+}
+  

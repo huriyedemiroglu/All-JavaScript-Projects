@@ -1,0 +1,16 @@
+body, #root {
+  min-height: 100vh;
+}
+
+.main-bg {
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.degree {
+  font-size: 4rem;
+  margin-bottom: -1rem;
+}
+.weather-icon {
+  font-size: 6rem;
+}

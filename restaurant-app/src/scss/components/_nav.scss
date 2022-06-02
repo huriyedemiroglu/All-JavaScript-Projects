@@ -1,0 +1,43 @@
+nav {
+    background-color: $primary-color;
+    color: $text-color;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+
+    .nav-brand {
+        font-size: 3rem;
+        text-shadow: 2px 2px 2px #DDD;
+        
+        &-link{
+            color: $text-color;
+            text-decoration: none;
+
+            &:visited {
+                color: $text-color
+            }
+        }
+    }
+
+    .nav-list-item {
+        display: inline-block;
+        margin-left: 1.5rem;
+        font-size: 2rem;
+
+        .nav-link {
+            position: relative;
+            bottom: 0;
+            transition-property: bottom;
+            transition-duration: 300ms;
+            @extend .nav-brand-link;
+    
+            &:hover {
+                bottom: 0.2rem;
+            }
+        }
+    }
+
+    
+}

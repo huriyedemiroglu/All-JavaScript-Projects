@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Busico</title>
+        <link
+            rel="shortcut icon"
+            href="./img/bootstrap-favicon.png"
+            type="image/x-icon"
+        />
+
+        <!-- BOOTSTRAP5 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- FONT AWESOME -->
+        <script
+            src="https://kit.fontawesome.com/97f6f8e3bf.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <!-- SOCIAL LINKS -->
+        <aside
+            class="fixed-top h-100 d-flex flex-column justify-content-center gap-3 ps-3"
+        >
+            <p class="follow">FOLLOW US</p>
+            <div class="border-start ms-4"></div>
+            <i
+                class="fa-brands fa-facebook-f fs-4 border rounded-circle p-3 mx-1"
+            ></i>
+            <i
+                class="fa-brands fa-twitter fs-4 border rounded-circle p-3 mx-1"
+            ></i>
+            <i
+                class="fa-brands fa-instagram fs-4 border rounded-circle p-3 mx-1"
+            ></i>
+            <i
+                class="fa-brands fa-linkedin-in fs-4 border rounded-circle p-3 mx-1"
+            ></i>
+            <div class="border-start ms-4"></div>
+        </aside>
+
+        <!-- NAVBAR -->
+        <nav
+            class="navbar navbar-light navbar-expand-xl fixed-top bg-light ps-0 py-4"
+        >
+            <div class="container-fluid ps-0">
+                <a class="navbar-brand fs-1 mb-2" href="#">
+                    Busico <br />
+                    <span class="fs-6 position-absolute template"
+                        >Template Page</span
+                    >
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="offcanvas offcanvas-end"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header">
+                        <button
+                            type="button"
+                            class="btn-close text-reset"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul
+                            class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-3"
+                        >
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link"
+                                    href="#"
+                                    id="homeDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >HOME +</a
+                                >
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="offcanvasNavbarDropdown"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >HOMEPAGE1</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >HOMEPAGE2</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link"
+                                    href="#"
+                                    id="pagesDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    >PAGES +</a
+                                >
+                                <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="offcanvasNavbarDropdown"
+                                >
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >About</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Team</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >FAQ</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Team</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Projects</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Pricing</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Services</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link"
+                                    href="#"
+                                    id="searchDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                    ><i class="fa-solid fa-magnifying-glass"></i
+                                ></a>
+                                <ul
+                                    class="dropdown-menu p-0"
+                                    aria-labelledby="offcanvasNavbarDropdown"
+                                    style="
+                                        position: absolute;
+                                        left: -10rem;
+                                        top: 3rem;
+                                    "
+                                >
+                                    <li class="p-0">
+                                        <form class="d-flex">
+                                            <input
+                                                class="form-control border-0 w-100"
+                                                type="search"
+                                                placeholder="Search"
+                                                aria-label="Search"
+                                            />
+                                            <button
+                                                class="btn p-0"
+                                                type="submit"
+                                            >
+                                                <i
+                                                    class="fa-solid fa-magnifying-glass text-white p-3 btn-navy-blue"
+                                                    style="
+                                                        background-color: #031659;
+                                                    "
+                                                ></i>
+                                            </button>
+                                        </form>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <button
+                                    class="btn py-2 px-4 text-white btn-orange"
+                                    type="submit"
+                                >
+                                    GET FREE QUOTE
+                                </button>
+                            </li>
+                        </ul>
+                        <button class="btn btn-light" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CAROUSEL -->
+        <section
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+        >
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img
+                        src="./img/image1.jpeg"
+                        class="d-block w-100"
+                        alt="..."
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="">WE BUILD YOUR DREAM</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Laudantium facilis quo saepe unde eligendi
+                            nihil, illo fugiat id soluta sapiente?
+                        </p>
+                        <div class="buttons d-flex gap-4">
+                            <button class="btn btn-orange p-3">
+                                CONTACT US
+                            </button>
+                            <button
+                                class="btn-orange px-4 py-3 rounded-circle btn-plus"
+                            >
+                                +
+                            </button>
+                            <button class="btn text-white p-0 explore">
+                                Explore More About Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img
+                        src="./img/image1.jpeg"
+                        class="d-block w-100"
+                        alt="some image"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>WE BUILD YOUR DREAM</h5>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Laudantium facilis quo saepe unde eligendi
+                            nihil, illo fugiat id soluta sapiente?
+                        </p>
+                        <div class="buttons d-flex gap-4">
+                            <button class="btn btn-orange p-3">
+                                CONTACT US
+                            </button>
+                            <button
+                                class="btn-orange px-4 py-3 rounded-circle btn-plus"
+                            >
+                                +
+                            </button>
+                            <button class="btn text-white p-0 explore">
+                                Explore More About Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-control position-relative">
+                <button
+                    class="carousel-control-prev prev"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev"
+                >
+                    <span class="" aria-hidden="true"></span>
+                    <span class="">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                        PREV</span
+                    >
+                </button>
+                <button
+                    class="carousel-control-next next"
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next"
+                >
+                    <span class="" aria-hidden="true"></span>
+                    <span class="">
+                        NEXT
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- ICONS -->
+        <section class="icons">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-7 p-5">
+                        <i class="fa-solid fa-calendar-days mb-4"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum vel alias asperiores fuga
+                            exercitationem excepturi, hic commodi tempora maxime
+                            optio!
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-7 p-5">
+                        <i class="fa-solid fa-check-to-slot mb-4"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum vel alias asperiores fuga
+                            exercitationem excepturi, hic commodi tempora maxime
+                            optio!
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 col-md-7 p-5">
+                        <i class="fa-solid fa-sitemap mb-4"></i>
+                        <h4>Lorem Ipsum</h4>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum vel alias asperiores fuga
+                            exercitationem excepturi, hic commodi tempora maxime
+                            optio!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT COMPANY -->
+        <section class="about pb-5">
+            <div class="row px-0">
+                <div class="col-lg-5 mt-5 position-relative">
+                    <img
+                        class="img-fluid"
+                        src="./img/image2.jpeg"
+                        alt="building"
+                    />
+                    <!-- Video -->
+                    <div id="video">
+                        <div class="overlay">
+                            <div class="container py-5">
+                                <div class="row">
+                                    <div class="col">
+                                        <a
+                                            href=""
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#modalYT"
+                                        >
+                                            <img
+                                                class="modal-image"
+                                                src="./img/image2.jpeg"
+                                                alt="some building"
+                                            />
+                                            <i
+                                                class="fa-solid fa-circle-play"
+                                            ></i>
+                                        </a>
+
+                                        <!-- Modal -->
+
+                                        <!--Modal: modalYT-->
+                                        <div
+                                            class="modal fade"
+                                            id="modalYT"
+                                            tabindex="-1"
+                                            role="dialog"
+                                            aria-labelledby="myModalLabel"
+                                            aria-hidden="true"
+                                        >
+                                            <div
+                                                class="modal-dialog modal-lg"
+                                                role="document"
+                                            >
+                                                <!--Content-->
+                                                <div class="modal-content">
+                                                    <button
+                                                        class="btn-close close-video"
+                                                        data-bs-dismiss="modal"
+                                                    ></button>
+
+                                                    <!--Body-->
+                                                    <div
+                                                        class="modal-body mb-0 p-0"
+                                                    >
+                                                        <div
+                                                            class="embed-responsive embed-responsive-16by9 z-depth-1-half"
+                                                        >
+                                                            <iframe
+                                                                class="embed-responsive-item modal-video w-100"
+                                                                src="https://www.youtube.com/embed/E1xkXZs0cAQ"
+                                                                title="YouTube video player"
+                                                                frameborder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                                allowfullscreen
+                                                            ></iframe>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--Modal: modalYT-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-7 mt-5">
+                    <h6 class="title-small">01.ABOUT COMPANY</h6>
+                    <h1 class="title-big">CREATIVE BUILDING DESIGN COMPANY</h1>
+                    <p class="mt-4 mb-5">
+                        We have intentionally never developed a stylistic
+                        formula for our work, which is why our projects never
+                        quite look or feel the same. Each of our spaces is the
+                        result of our ability to listen.
+                    </p>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link active border-0"
+                                id="home-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#home"
+                                type="button"
+                                role="tab"
+                                aria-controls="home"
+                                aria-selected="true"
+                            >
+                                TECHNOLOGY
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link border-0"
+                                id="profile-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#profile"
+                                type="button"
+                                role="tab"
+                                aria-controls="profile"
+                                aria-selected="false"
+                            >
+                                MATERIALS
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button
+                                class="nav-link border-0"
+                                id="contact-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#contact"
+                                type="button"
+                                role="tab"
+                                aria-controls="contact"
+                                aria-selected="false"
+                            >
+                                APPROVED
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-4" id="myTabContent">
+                        <div
+                            class="tab-pane fade show active"
+                            id="home"
+                            role="tabpanel"
+                            aria-labelledby="home-tab"
+                        >
+                            <img
+                                class="img-fluid float-start me-3"
+                                src="./img/tab-img1.jpeg"
+                                alt="work"
+                            />
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="profile"
+                            role="tabpanel"
+                            aria-labelledby="profile-tab"
+                        >
+                            <img
+                                class="img-fluid float-start me-3"
+                                src="./img/tab-img2.jpeg"
+                                alt="work"
+                            />
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                        <div
+                            class="tab-pane fade"
+                            id="contact"
+                            role="tabpanel"
+                            aria-labelledby="contact-tab"
+                        >
+                            <img
+                                class="img-fluid float-start me-3"
+                                src="./img/tab-img1.jpeg"
+                                alt="work"
+                            />
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="buttons d-flex gap-4 mt-5">
+                        <button
+                            class="btn-orange px-4 py-3 rounded-circle border-0"
+                        >
+                            +
+                        </button>
+                        <button class="btn p-0 fw-bold explore">
+                            Explore More About Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED SERVICE -->
+        <section class="services mt-5 p-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="card border-0 bg-light col-xl-4 col-lg-6 col-md-12 m-2"
+                        style="width: 22rem"
+                    >
+                        <div class="card-body">
+                            <h6 class="card-title title-small">
+                                02. FEATURED SERVICE
+                            </h6>
+                            <h1 class="card-title title-big">
+                                WHAT WE OFFER YOU
+                            </h1>
+                            <p class="card-text">
+                                Our promise as a contractor is to build strong
+                                community value into every projects.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card border-0 p-3 col-xl-4 col-lg-6 col-md-12 m-2 service"
+                        style="width: 22rem"
+                    >
+                        <div class="card-body">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                            <h5 class="card-title fw-bold my-4">
+                                ARCHITECHTURE
+                            </h5>
+                            <p class="card-text">
+                                We commit ourselves to complete all projects
+                                within the timeline set with our honorable
+                                clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card border-0 p-3 col-xl-4 col-lg-6 col-md-12 m-2 service"
+                        style="width: 22rem"
+                    >
+                        <div class="card-body">
+                            <i class="fa-solid fa-swatchbook"></i>
+                            <h5 class="card-title fw-bold my-4">
+                                INTERIOR DESIGN
+                            </h5>
+                            <p class="card-text">
+                                We commit ourselves to complete all projects
+                                within the timeline set with our honorable
+                                clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card border-0 p-3 col-xl-4 col-lg-6 col-md-12 m-2 service"
+                        style="width: 22rem"
+                    >
+                        <div class="card-body">
+                            <i class="fa-solid fa-holly-berry"></i>
+                            <h5 class="card-title fw-bold my-4">
+                                HOME DECORATION
+                            </h5>
+                            <p class="card-text">
+                                We commit ourselves to complete all projects
+                                within the timeline set with our honorable
+                                clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card border-0 p-3 col-xl-4 col-lg-6 col-md-12 m-2 service"
+                        style="width: 22rem"
+                    >
+                        <div class="card-body">
+                            <i class="fa-solid fa-paint-roller"></i>
+                            <h5 class="card-title fw-bold my-4">
+                                REPAIR & PAINTING
+                            </h5>
+                            <p class="card-text">
+                                We commit ourselves to complete all projects
+                                within the timeline set with our honorable
+                                clients.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="card border-0 p-3 col-xl-4 col-lg-6 col-md-12 m-2 service"
+                        style="width: 22rem"
+                    >
+                        <div class="card-body">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <h5 class="card-title fw-bold my-4">SKETCHING</h5>
+                            <p class="card-text">
+                                We commit ourselves to complete all projects
+                                within the timeline set with our honorable
+                                clients.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta p-5">
+            <div
+                class="d-flex py-2 px-5 justify-content-center align-items-center gap-2"
+            >
+                <i class="fa-solid fa-envelopes-bulk me-3"></i>
+                <h2 class="w-50">
+                    LOOKING FOR A QUALITY ARCHITECT FOR YOUR PROJECT?
+                </h2>
+                <button class="btn-orange px-5 py-4 border">
+                    GET A FREE QUOTE
+                </button>
+            </div>
+        </section>
+
+        <!-- CORE FEATURES -->
+        <section class="features">
+            <div class="row w-100 mx-auto">
+                <div class="features-content col-xl-7 mt-5 pt-5 pe-5">
+                    <h6 class="title-small w-75 mt-5">03.CORE FEATURES</h6>
+                    <h1 class="title-big w-75">VIEW FULL PROJECT MANAGEMENT</h1>
+                    <div class="row w-75 my-4">
+                        <div class="w-25">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="w-75">
+                            <h5>INNOVATION</h5>
+                            <p>
+                                We are expert and professional.But I must
+                                explain to you how all this mistaken ofenoun
+                                cing pleasure and praising.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row w-75">
+                        <div class="w-25">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                        <div class="w-75">
+                            <h5>PROJECT HANDOVER</h5>
+                            <p>
+                                We are expert and professional.But I must
+                                explain to you how all this mistaken ofenoun
+                                cing pleasure and praising.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 position-relative">
+                    <img
+                        class="w-100 features-img"
+                        src="./img/image3.webp"
+                        alt="img"
+                    />
+                    <div class="harvest-home bg-light">
+                        <h5>HARVEST HOME</h5>
+                        <p>
+                            We commit ourselves to complete all projects within
+                            the timeline.
+                        </p>
+                        <hr />
+                        <h5>EXECUTION & HANDOVER DATE</h5>
+                        <p>Jan 18 2010 - Jun 23 2015</p>
+                        <h5>CLIENT NAME</h5>
+                        <p>Maxuel D Silva</p>
+                        <hr />
+                        <div class="row">
+                            <div class="col">
+                                <h5>POF</h5>
+                                <p class="mb-0">Elemental</p>
+                                <p class="fs-5">24.658 <small>Mon</small></p>
+                            </div>
+                            <div class="col">
+                                <h5>HUI</h5>
+                                <p class="mb-0">Special</p>
+                                <p class="fs-5">224.658 <small>Years</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="mt-5 pt-5 bg-light">
+            <div class="container footer-top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <h5 class="fs-2 fw-bold my-5">GET IN TOUCH</h5>
+                        <div class="d-flex gap-3 align-items-center my-4">
+                            <i class="fa-solid fa-phone"></i>
+                            <div class="info">
+                                <span>+673 853 605 985 </span>
+                                <br />
+                                <span>908 9098 987 98 </span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center my-4">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="info">
+                                <span>info@example.com </span>
+                                <br />
+                                <span>info@webexample.com </span>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center my-4">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info">
+                                <span>7300-7398 Colonial Rd, Brooklyn, </span>
+                                <br />
+                                <span>NY 11209 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <h5 class="fs-2 fw-bold my-5">QUICK LINKS</h5>
+                        <div class="footer-links d-flex flex-column">
+                            <a class="my-2" href="#">About Company</a>
+                            <a class="my-2" href="#">Communication Services</a>
+                            <a class="my-2" href="#">Internet of Things</a>
+                            <a class="my-2" href="#">Product Development</a>
+                            <a class="my-2" href="#">Industrial Automation</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <h5 class="fs-2 fw-bold my-5">NEWSLETTER</h5>
+                        <form action="">
+                            <div class="input-box p-4">
+                                <i class="fa-solid fa-envelope fs-5 me-3"></i>
+                                <input
+                                    class="email-input"
+                                    type="email"
+                                    placeholder="Enter email address"
+                                    required
+                                />
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn-orange border-0 fs-6 w-100 p-3 my-4"
+                            >
+                                SUBSCRIBE NOW
+                                <i
+                                    class="fa-solid fa-paper-plane text-white fs-6"
+                                ></i>
+                            </button>
+                            <p>
+                                Opening Hours: <b>Mon - Fri: 9:30 AM - 10 PM</b>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+                <div class="row footer-company p-4 w-75 mx-auto">
+                    <div class="brand d-flex align-items-center col-4">
+                        <i class="fa-solid fa-b text-white"></i>
+                        <div>
+                            <h1>BUSICO</h1>
+                            <h6>Construction Template</h6>
+                        </div>
+                    </div>
+                    <div class="col-4 d-flex align-items-center pt-3">
+                        <p>
+                            Become an innovative entrepreneurial & empowered
+                            company constantly creating mission to be a world
+                            class construction company.
+                        </p>
+                    </div>
+                    <div class="social-links col-4 d-flex justify-content-center align-items-center gap-2">
+                        <i
+                            class="fa-brands fa-facebook-f fs-4 p-3 mx-1"
+                        ></i>
+                        <i
+                            class="fa-brands fa-twitter fs-4 p-3 mx-1"
+                        ></i>
+                        <i
+                            class="fa-brands fa-instagram fs-4 p-3 mx-1"
+                        ></i>
+                        <i
+                            class="fa-brands fa-linkedin-in fs-4 p-3 mx-1"
+                        ></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer-bottom">
+                <div class="row">
+                    <div class="col-8 text-center">
+                        <p>
+                            © 2022 Copyright By
+                            <a class="busico" href="#">Busico</a>. All Rights
+                            Reserved
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <a
+                            class="link-secondary border-end border-secondary px-3"
+                            href="#"
+                            >Teams & Conditions</a
+                        >
+                        <a class="link-secondary px-3" href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- To the top Button -->
+        <a href="#"><i class="fa-solid fa-angle-up to-top"></i></a>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Script for modal video -->
+        <script>
+            $("#video").on("hide.bs.modal", function () {
+                $(".embed-responsive-item").attr(
+                    "src",
+                    $(".embed-responsive-item").attr("src")
+                );
+            });
+        </script>
+    </body>
+</html>

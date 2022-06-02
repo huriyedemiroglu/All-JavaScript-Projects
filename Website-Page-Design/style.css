@@ -1,0 +1,222 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #35424A;
+}
+header, .subscribe, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #35424A;
+    color: #FFF;
+}
+header {
+    border-bottom: 3px solid #A95088;
+}
+h1 {
+    font-size: 1.5rem;
+}
+h1 span {
+    color: #A95088;
+}
+li {
+    display: inline-block;
+    margin-left: 1.5rem;
+    font-size: 0.9rem;
+}
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+a:hover {
+    color: #A95088;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #F4F4F4;
+}
+
+h2 {
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+
+.subscribe input {
+    padding: 0.5rem 0.3rem;
+    width: 15rem;
+}
+.submit {
+    background-color: #E7491D;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+}
+.subscribe button:hover {
+    cursor: pointer;
+}
+
+footer {
+    flex-direction: column;
+}
+footer img {
+    width: 13rem;
+}
+
+/* index.html */
+.middle {
+    background-image: url("./images/showcase.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #FFF;
+    padding: 10rem 6rem 10.5rem;
+    text-align: center;
+}
+.parts {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 1rem 3rem;
+}
+.parts > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1;
+    text-align: center;
+}
+.parts img {
+    width: 5rem;
+}
+
+/* about.html */
+.about {
+    flex: 1;
+    display: flex;
+    padding: 1.5rem 2rem;
+    gap: 4rem;
+}
+.about p {
+    margin: 1rem 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.dark {
+    padding: 1rem;
+    background-color: #35424A;
+    color: #FFF;
+}
+.dark h4 {
+    margin: 0.4rem 0 0.8rem;
+}
+.right {
+    flex: 1;
+    align-self: flex-start;
+}
+.right.dark {
+    padding-top: 2rem;
+}
+.left {
+    flex: 3;
+}
+
+/* services.html */
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 93%;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    margin-bottom: 5rem;
+}
+.card {
+    background-color: #E6E6E6;
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    border: 1px solid #D0D0D0;
+}
+.card p {
+    margin: 0;
+}
+#name, #email, #message {
+    width: 90%;
+    padding: 0.3rem;
+    margin: 0.2rem 0;
+}
+textarea {
+    resize: none;
+}
+.right label {
+    font-size: 14px;
+    color: #E6E6E6;
+}
+
+@media screen and (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        gap: 0;
+    }
+    .left {
+        flex: 0.5;
+    }
+}
+@media screen and (max-width: 660px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+    li {
+        margin-left: 0.5rem;
+    }
+    .subscribe {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+    .parts {
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    ul {
+        margin-left: -0.5rem;
+    }
+    .middle {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    header, .subscribe, footer {
+        padding: 1rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}

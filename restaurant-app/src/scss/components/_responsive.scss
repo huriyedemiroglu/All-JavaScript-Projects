@@ -1,0 +1,135 @@
+@include media-xl {
+    .menu {
+        .menu-container {
+            width: 95%;
+        }
+    }
+}
+
+@include media-lg {
+    .home {
+        .home-definition {
+            padding: 3rem;
+        }
+    }
+}
+
+@include media-md {
+    nav {
+        padding: 2rem;
+
+        .nav-list-item {
+            font-size: 1.5rem;
+            margin-left: 0.8rem;
+        }
+    }
+
+    .home {
+        .home-definition {
+            h1 {
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+
+    .contact {
+        overflow: auto;
+
+        .contact-container {
+            flex-direction: column;
+            margin: 16rem 0 2rem;
+
+            .contact-form {        
+                border: none;
+                border-top: 3px solid #FFF;
+                width: 90%;
+                align-self: center;
+                padding-top: 2rem;
+            }
+        } 
+    }
+}
+
+@include media-sm {
+    nav {
+        height: 15vh;
+        flex-direction: column;
+        padding: 0.8rem 2rem;
+        align-items: center;
+
+        .nav-list {
+            display: flex;
+            gap: 1rem;
+
+            .nav-list-item {
+                margin: 0;
+            }
+        }
+        
+    }
+
+    .home {
+        .home-definition {
+            padding: 1rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.3rem;
+            }
+            .menu-button {
+                padding: 0.5rem 1.5rem;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+    .contact {
+        .contact-container {
+            width: 90%;
+            margin-top: 18rem;
+
+            .contact-info {
+                width: 100%;
+            }
+            .contact-info h2, .contact-form h2 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-xs {
+    .home {
+        .home-definition {
+            padding: 0.5rem;
+
+            h1 {
+                font-size: 2.4rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .menu {
+        .menu-title {
+            font-size: 2.5rem;
+        }
+    }
+}

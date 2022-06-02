@@ -1,0 +1,36 @@
+.menu {
+    @include main("../../img/bgMenu2.jpeg");
+    flex-direction: column;
+
+    h2 {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    
+    &-container {
+        border: 3px solid white;
+        outline: 2px solid white;
+        outline-offset: 2px;
+        margin: 1rem auto 2rem;
+        padding: 2rem;
+        width: 75rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        overflow: auto;
+
+        .menu-item {
+            width: 22rem;
+            box-shadow: 2px 2px 2px 2px;
+
+            &-image {
+                width: 100%;
+            }
+
+            &-text {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

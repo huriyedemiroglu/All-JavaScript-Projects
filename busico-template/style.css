@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-left: 6rem;
+    color: #031659;
+    position: relative;
+}
+/* Navbar */
+.navbar {
+    margin-left: 6rem;
+}
+aside {
+    width: 5rem;
+}
+
+.btn-orange, .btn-navy-blue {
+    transition: all ease-in-out 300ms;
+    background-color: #ff5e14;
+    color: #FFF;
+}
+.btn-orange:hover {
+    background-color: #031659 !important;
+    color: #FFF;
+}
+
+.btn-navy-blue:hover {
+    background-color: #FF5E14 !important;
+}
+.template {
+    bottom: 1.5rem;
+}
+
+/* Aside */
+.follow {
+    writing-mode:vertical-lr;
+    margin-left: 0.8rem;
+    font-weight: 700;
+}
+aside div {
+    height: 7rem;
+}
+
+.fa-brands {
+    width: 3.1rem;
+    height: 3.1rem;
+    padding-top: 0.7rem !important;
+    padding-left: 0.85rem !important;
+    transition: all ease-in-out 300ms;
+}
+.fa-brands:hover {
+    cursor: pointer;
+    background-color: #FF5E14;
+    color: #FFF;
+}
+
+/* Carousel */
+.carousel-caption {
+    text-align: left;
+    width: 40%;
+    bottom: 8vw;
+}
+.carousel-caption h5 {
+    font-size: 4rem;
+}
+
+.carousel-control {
+    position: relative;
+    bottom: 3rem;
+    width: 14rem;
+    margin-left: auto;
+}
+.carousel .next, .carousel .prev {
+    position: absolute;
+    border: 3px solid white;
+    background-color: #FFF;
+    color: #000;
+    width: 50%;
+    height: 3rem;
+    opacity: 1;
+}
+
+.btn-plus {
+    color: #FF5E14;
+    background-color: #FFF;
+    border: none;
+}
+.explore {
+    width: 8rem;
+    text-align: left;
+}
+
+/* Icons */
+.icons .fa-solid {
+    color: #FF5E14;
+    font-size: 3.5rem;
+}
+.icons .row {
+    width: 75rem;
+}
+
+/* About */
+.about .row {
+    display: flex;
+    justify-content: center;
+}
+section .title-small {
+    color: #FF5E14;
+}
+section .title-big {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.about .nav-link {
+    font-weight: bolder;
+    color: #031659;
+}
+.about button.active {
+    border-bottom: 5px solid #FF5E14 !important;
+}
+
+.tab-content ul li{
+    list-style-type: none;
+    margin: 1rem;
+}
+.tab-content ul li::before {
+    content: '✓';
+    color: #FF5E14;
+    margin-right: 1rem;
+    
+}
+
+/* Video Modal */
+#video {
+    position: absolute;
+    width: 13rem;
+    left: -5rem;
+    bottom: -4rem;
+}
+.modal-image {
+    width: 13rem;
+    outline: 15px solid #FFF;
+}
+.modal-video {
+    height: 27rem;
+}
+.close-video {
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+}
+.fa-circle-play {
+    position: absolute;
+    color: #000;
+    background-color: #FFF;
+    margin: 0;
+    top: 43%;
+    left: 52%;
+    border-radius: 50%;
+    font-size: 4rem;
+}
+
+/* Services */
+.card .fa-solid {
+    color: #FF5E14;
+    font-size: 3rem;
+}
+.service {
+    transition: all ease-in-out 300ms;
+}
+
+.service:hover {
+    background: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0.5)),
+     url("./img/image4.jpeg");
+     color: #FFF;
+}
+
+/* CTA */
+.cta {
+    background-color: #FF5E14;
+    color: #FFF;
+}
+.cta .fa-solid {
+    font-size: 5rem;
+}
+
+/* Features */
+.features .fa-solid {
+    font-size: 3rem;
+    color: #FF5E14;
+    border: 5px solid #FF5E14;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.features-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.harvest-home {
+    position: absolute;
+    top: 5rem;
+    left: -8rem;
+    width: 22rem;
+    padding: 2rem;
+    line-height: 2.5;
+}
+.harvest-home p {
+    color: gray;
+}
+.harvest-home small {
+    color: #FF5E14;
+}
+
+/* Footer */
+.footer-top {
+    padding-bottom: 2rem;
+}
+
+footer .fa-solid {
+    color: #FF5E14;
+    font-size: 2rem;
+}
+
+.footer-links a {
+    position: relative;
+    left: 0;
+    text-decoration: none;
+    color: gray;
+    transition-property: left;
+    transition-duration: 500ms;
+}
+.footer-links a:hover {
+    color: #031659;
+    left: 1rem;
+}
+
+.input-box {
+    background-color: #FFF;
+}
+.email-input {
+    border: none;
+    outline: none;
+}
+.footer-bottom {
+    background-color: #031659;
+    color: #FFF;
+    padding: 8rem 2rem 2rem;
+}
+.footer-bottom a {
+    text-decoration: none;
+    font-weight: 700;
+}
+.footer-bottom .busico {
+    color: #FF5E14;
+}
+.footer-company {
+    background-color: #FF5E14;
+    color: #FFF;
+    position: relative;
+    top: 6rem;
+}
+.brand .fa-solid {
+    font-size: 6rem;
+    margin: 1rem;
+}
+
+footer .fa-brands {
+    background-color: #FFF;
+    color: #031659;
+}
+footer .fa-brands:hover {
+    background-color: #031659;
+    color: #FFF;
+}
+
+.to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: #031659;
+    color: #FFF;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: all ease-in-out 300ms;
+}
+.to-top:hover {
+    background-color: #FF5E14;
+}
+
+@media screen and (max-width:1460px) {
+    .features-img {
+        display: none;
+    }
+    .harvest-home {
+        position: static;
+        width: 90%;
+        margin-top: 8rem;
+    }
+}

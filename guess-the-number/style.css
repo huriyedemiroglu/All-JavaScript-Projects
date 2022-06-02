@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;;
+}
+body{
+    background-color: black;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+#başlık{
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+.number{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+#input_numara{
+    /* width: 50%;
+    height: 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px; */
+}
+.input_submit{
+    width: 4rem;
+    background-color: #ffff;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    border-radius: 2em;
+}
+.input_reset {
+    width: 4rem;
+    background-color: #ffff;
+    font-size: 16px;
+    font-weight: 900;
+    border: none;
+    color: black;
+    border-radius: 2em;
+}
+.input_reset:hover {
+    background-color: #7072df;
+    border: 1px inset grey;
+}
+
+.input_submit:hover {
+    border: 1px inset grey;
+    background-color:#f19595; ;
+}
+
+#resim{
+    width: 40%;
+    border-radius: 15px 10px;
+   
+
+}
+.content1,
+.content2 {
+    font-size: 2rem;
+    color: #ffff;
+}
+
+.mesaj {
+    font-size: 2rem;
+}

@@ -1,0 +1,42 @@
+.home {
+    @include main ("../../img/table.jpeg");
+
+    &-definition {
+        padding: 10rem;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        h1 {
+            font-size: 4.5rem;
+        }
+        h2 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        .menu-button {
+            position: relative;
+            width: fit-content;
+            padding: 1rem 2rem;
+            font-size: 2rem;
+            border-radius: 5px;
+            border: 2px solid $text-color;
+            background-color: $primary-color;
+            color: $text-color;
+            transition: all 300ms;
+            text-decoration: none;
+        }
+        .menu-button:hover {
+            background-color: $text-color;
+            color: $primary-color;
+        }
+        .menu-button:active {
+            top: 1px;
+        }
+    }
+}
