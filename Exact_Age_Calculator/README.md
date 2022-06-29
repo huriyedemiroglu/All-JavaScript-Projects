@@ -16,9 +16,6 @@ Users should be able to:
 
 ![./screenshot.png](./img/screenshot.png)
 
-### Links
-
-- Live Site URL: [https://elifyca.io/Exact_Age_Calculator/](https://elifyca.io/Exact_Age_Calculator/)
 
 ### Built with
 
