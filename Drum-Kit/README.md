@@ -14,9 +14,7 @@ Users should be able to:
 
 ![./screenshot.png](./images/screenshot.png)
 
-### Links
 
-- Live Site URL: [https://elifyca.github.io/Drum-Kit2/](https://elifyca.github.io/Drum-Kit2/)
 
 ### Built with
 
