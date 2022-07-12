@@ -15,7 +15,6 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://elifyca.github.io/Website-Page-Design/index.html](https://elifyca.github.io/Website-Page-Design/index.html)
 
 ### Built with
 
