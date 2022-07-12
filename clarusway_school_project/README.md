@@ -13,9 +13,6 @@ Users should be able to:
 
 ![./screenshot.png](./img/screenshot.png)
 
-### Links
-
-- Live Site URL: https://elifyca.github.io/clarusway_school_project/
 
 ### Built with
 
